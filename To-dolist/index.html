@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>College Schedule Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1> ✨  📚 College Schedule Manager ✨</h1>
+  <div class="schedule-container">
+    <label class="label">Task Title</label>
+    <input type="text" id="taskTitle" placeholder="e.g., Submit assignment" />
+
+    <label class="label">Subject</label>
+    <input type="text" id="taskSubject" placeholder="e.g., Mathematics" />
+
+    <label class="label">Category</label>
+    <select id="taskCategory">
+      <option value="Assignment">Assignment</option>
+      <option value="Exam">Exam</option>
+      <option value="Lecture">Lecture</option>
+      <option value="Reminder">Reminder</option>
+    </select>
+
+    <label class="label">Due Date</label>
+    <input type="date" id="taskDate" />
+
+    <button onclick="addTask()">Add to Schedule</button>
+    <ul id="taskList"></ul>
+  </div>
+
+  <script src="script.js">
+    
+  </script>
+</body>
+</html>

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Viji Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(to bottom right, #f8f9fa, #eaf3ff);
+      font-family: 'Poppins', sans-serif;
+      color: #333;
+    }
+
+    .navbar {
+      background: linear-gradient(90deg, #0d6efd, #6610f2);
+    }
+
+    .hero {
+      background: linear-gradient(to right, #cfe2ff, #f8f9fa);
+      padding: 80px 0;
+      border-radius: 15px;
+    }
+
+    .hero h1 {
+      font-weight: 700;
+      color: #0d6efd;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      color: #444;
+    }
+
+    .btn-primary {
+      background-color: #0d6efd;
+      border: none;
+      transition: all 0.3s ease;
+    }
+
+    .btn-primary:hover {
+      background-color: #6610f2;
+      transform: scale(1.05);
+    }
+
+    .card {
+      border-radius: 15px;
+      transition: transform 0.3s ease-in-out;
+      background-color: #ffffff;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .card-title {
+      color: #0d6efd;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    /* --- About Section --- */
+    .about-section {
+      background-color: #f1f6ff;
+      padding: 60px 0;
+      border-radius: 15px;
+    }
+
+    .about-img-wrapper {
+      position: relative;
+      display: inline-block;
+      background: radial-gradient(circle at center, #dbe8ff 0%, #f8f9fa 90%);
+      border-radius: 50%;
+      padding: 18px;
+      box-shadow: 0 0 25px rgba(13, 110, 253, 0.3);
+    }
+
+    .about-img {
+      width: 320px;
+      height: 320px;
+      object-fit: cover;
+      object-position: 50% 25%;
+      border-radius: 50%;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+      transition: transform 0.3s ease;
+    }
+
+    .about-img:hover {
+      transform: scale(1.05);
+    }
+
+    /* --- Skills Section --- */
+    .skills-section {
+      background-color: #e8f0fe;
+      padding: 60px 0;
+      border-radius: 15px;
+    }
+
+    footer {
+      background: #212529;
+      color: #fff;
+      padding: 20px 0;
+    }
+
+    footer a {
+      color: #fff;
+      text-decoration: underline;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .credits {
+      text-align: center;
+      margin-top: 10px;
+      font-size: 0.95rem;
+      color: #333;
+    }
+
+    @media (max-width: 768px) {
+      .about-img {
+        width: 240px;
+        height: 240px;
+        object-position: 50% 20%;
+      }
+
+      .about-section .row {
+        flex-direction: column-reverse;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark py-3 shadow sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold fs-4" href="#">Viji</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto gap-3 text-uppercase fw-semibold">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero text-center">
+    <div class="container">
+      <h1>Hi, I am <span style="color:#6610f2;">Vijayalakshmi B</span></h1>
+      <p class="lead mt-3">
+        I am a 3rd year B.E student | Frontend Developer skilled in HTML, CSS, JavaScript |
+        Passionate about creating clean, responsive, and user-friendly websites.
+      </p>
+      <a href="https://wa.me/+918148487110?text=HI%20VIJI!!!" class="btn btn-primary mt-3" target="_blank">Connect with me 💬</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about-section my-5">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <!-- About Content (Left Side) -->
+        <div class="col-md-7">
+          <div class="card border-0 shadow-lg">
+            <div class="card-body">
+              <h5 class="card-title mb-3">About Me</h5>
+              <ul class="mb-0">
+                <li>I am pursuing my 3rd year in Computer Science and Engineering at Unnamalai Institute of Technology, Kovilpatti.</li>
+                <li>I specialize in frontend development and have hands-on experience with HTML, CSS, JavaScript, and Bootstrap.</li>
+                <li>I built a mini e-learning platform as part of my responsive design practice.</li>
+                <li>I have leadership skills — I organized and led my college symposium and secured 1st prize in Paper Presentation competitions.</li>
+                <li>Outside academics, I love playing ball badminton. My goal is to become a skilled frontend developer and contribute to impactful projects.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Profile Image (Right Side) -->
+        <div class="col-md-5 text-center">
+          <div class="about-img-wrapper">
+            <img src="image.html/IMG-20250905-WA0034.jpg" alt="Profile" class="about-img">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills-section my-5">
+    <div class="container">
+      <h3 class="text-center mb-4 text-primary text-uppercase">Skills</h3>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card shadow-sm border-0">
+            <div class="card-body">
+              <h6 class="card-title">Technical Skills</h6>
+              <ul>
+                <li>Frontend Development → HTML, CSS, JavaScript, Bootstrap</li>
+                <li>Responsive Design → Flexbox, Grid, Media Queries</li>
+                <li>Version Control → Git, GitHub</li>
+                <li>Tools → VS Code, Chrome DevTools</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card shadow-sm border-0">
+            <div class="card-body">
+              <h6 class="card-title">Soft Skills</h6>
+              <ul>
+                <li>Leadership</li>
+                <li>Communication</li>
+                <li>Teamwork</li>
+                <li>Problem Solving</li>
+                <li>Adaptability</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="container my-5">
+    <div class="card shadow-lg border-0">
+      <div class="card-body">
+        <h5 class="card-title mb-3">Contact</h5>
+        <form id="contactForm">
+          <div class="mb-3">
+            <label class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter your name">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Email address</label>
+            <input type="email" class="form-control" id="email" placeholder="name@example.com">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Type Your Query</label>
+            <textarea class="form-control" id="message" rows="3" placeholder="Type here..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+          <p id="formMsg" class="mt-3 text-success fw-bold"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center">
+    <p>📞 +91 8148487110 | ✉️ vijisubu2314@gmail.com</p>
+    <a href="https://www.linkedin.com/in/vijayalakshmi-b-2ba2b9363" target="_blank">LinkedIn</a>
+    <p></p>
+    <p class="mb-0">© 2025 Viji. All rights reserved.</p>
+  </footer>
+
+  <p class="credits">Designed and Developed by <b style="color:#0d6efd;">Viji ❤</b></p>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Contact Form Submit JS
+    document.getElementById("contactForm").addEventListener("submit", function(e){
+      e.preventDefault();
+      document.getElementById("formMsg").innerText = "Form submitted successfully!";
+      document.getElementById("name").value = "";
+      document.getElementById("email").value = "";
+      document.getElementById("message").value = "";
+      setTimeout(()=> document.getElementById("formMsg").innerText="", 3000);
+    });
+  </script>
+</body>
+</html>
